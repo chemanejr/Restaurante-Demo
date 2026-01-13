@@ -1,0 +1,16 @@
+{
+    "name": "gourmet-restaurant-demo",
+    "version": "1.0.0",
+    "description": "Premium Restaurant Demo Website",
+    "main": "index.html",
+    "scripts": {
+        "start": "serve ."
+    },
+    "keywords": [
+        "restaurant",
+        "demo",
+        "gourmet"
+    ],
+    "author": "",
+    "license": "ISC"
+}

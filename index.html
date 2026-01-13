@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Restaurant Demo - Restaurante de alta qualidade. Sabores que encantam, momentos que ficam.">
+    <meta name="keywords" content="restaurante, gastronomia, gourmet, demo">
+    <title>Gourmet Experience - Sabores que encantam, momentos que ficam</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-logo">
+                <div class="logo-placeholder">Gourmet<span>Restaurant</span></div>
+            </div>
+            <nav class="header-nav">
+                <a href="#home" class="nav-link">Início</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#specialties" class="nav-link">Especialidades</a>
+                <a href="#daily-dish" class="nav-link">Prato do Dia</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#location" class="nav-link">Localização</a>
+                <a href="tel:+258849611719" class="btn btn-primary-small">Reservar Mesa</a>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/258849611719" class="whatsapp-float" target="_blank" aria-label="Fale connosco no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <img src="assets/hero-sabrina.png" alt="Restaurant Interior" class="hero-background">
+        <div class="hero-content">
+            <h1>Sabores que encantam, momentos que ficam</h1>
+            <p class="hero-subtitle">Uma experiência gastronómica única de alta qualidade</p>
+            <div class="hero-cta">
+                <a href="#menu" class="btn btn-primary">Ver Menu</a>
+                <a href="tel:+258849611719" class="btn btn-outline">Reservar Mesa</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="about-content fade-in">
+                <h2 class="section-title">Bem-vindo ao Nosso Restaurante</h2>
+                <p>
+                    Neste restaurante, celebramos a rica tradição gastronómica moçambicana com paixão e dedicação.
+                    Cada prato é preparado com ingredientes frescos e de qualidade, combinando sabores autênticos
+                    com uma apresentação moderna e elegante.
+                </p>
+                <p>
+                    Mais do que um restaurante, o nosso espaço é um local de convívio, onde famílias e amigos se
+                    reúnem para partilhar momentos especiais. O nosso ambiente acolhedor e o atendimento atencioso
+                    garantem que cada visita seja uma experiência memorável.
+                </p>
+                <p>
+                    Venha descobrir porque somos a escolha preferida para quem aprecia boa comida e excelente companhia.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section class="menu section" id="menu">
+        <div class="container">
+            <div class="text-center fade-in">
+                <h2 class="section-title">Nosso Menu</h2>
+                <p>Descubra os sabores que fazem da nossa cozinha um lugar especial</p>
+            </div>
+
+            <div class="menu-categories">
+                <!-- Pratos Principais -->
+                <div class="menu-category fade-in">
+                    <h3 class="category-title">Pratos Principais</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Frango Grelhado</span>
+                                <span class="item-price">450 MT</span>
+                            </div>
+                            <p class="item-description">Frango marinado com especiarias, grelhado na perfeição,
+                                acompanhado de arroz e legumes frescos</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Camarão Grelhado à Fusion</span>
+                                <span class="item-price">850 MT</span>
+                            </div>
+                            <p class="item-description">Camarões gigantes de Moçambique com infusão de peri-peri, mel e
+                                ervas finas</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Matapa de Caranguejo</span>
+                                <span class="item-price">650 MT</span>
+                            </div>
+                            <p class="item-description">Tradição com amendoim, coco e caranguejo fresco da costa</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Caril de Camarão</span>
+                                <span class="item-price">650 MT</span>
+                            </div>
+                            <p class="item-description">Camarões frescos em molho de caril cremoso, servido com arroz de
+                                coco</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Matapa</span>
+                                <span class="item-price">400 MT</span>
+                            </div>
+                            <p class="item-description">Prato tradicional moçambicano de folhas de mandioca com camarão
+                                e amendoim</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Peixe Grelhado</span>
+                                <span class="item-price">550 MT</span>
+                            </div>
+                            <p class="item-description">Peixe fresco do dia grelhado, temperado com limão e ervas
+                                aromáticas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Entradas -->
+                <div class="menu-category fade-in">
+                    <h3 class="category-title">Entradas</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Chamuças</span>
+                                <span class="item-price">150 MT</span>
+                            </div>
+                            <p class="item-description">Chamuças crocantes recheadas com carne ou vegetais (4 unidades)
+                            </p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Salada Tropical</span>
+                                <span class="item-price">200 MT</span>
+                            </div>
+                            <p class="item-description">Mix de folhas frescas com manga, abacate e molho de maracujá</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Rissóis de Camarão</span>
+                                <span class="item-price">180 MT</span>
+                            </div>
+                            <p class="item-description">Rissóis cremosos de camarão, fritos até ficarem dourados (4
+                                unidades)</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Sopa do Dia</span>
+                                <span class="item-price">120 MT</span>
+                            </div>
+                            <p class="item-description">Sopa caseira preparada diariamente com ingredientes frescos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sobremesas -->
+                <div class="menu-category fade-in">
+                    <h3 class="category-title">Sobremesas</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Pudim de Coco</span>
+                                <span class="item-price">180 MT</span>
+                            </div>
+                            <p class="item-description">Pudim cremoso de coco com calda de caramelo</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Mousse de Maracujá</span>
+                                <span class="item-price">160 MT</span>
+                            </div>
+                            <p class="item-description">Mousse leve e refrescante de maracujá</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Bolo de Chocolate</span>
+                                <span class="item-price">200 MT</span>
+                            </div>
+                            <p class="item-description">Bolo de chocolate húmido com ganache e sorvete de baunilha</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Salada de Frutas</span>
+                                <span class="item-price">140 MT</span>
+                            </div>
+                            <p class="item-description">Frutas tropicais frescas da época</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bebidas -->
+                <div class="menu-category fade-in">
+                    <h3 class="category-title">Bebidas</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Sumos Naturais</span>
+                                <span class="item-price">100 MT</span>
+                            </div>
+                            <p class="item-description">Laranja, manga, maracujá, abacaxi ou melancia</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Refrigerantes</span>
+                                <span class="item-price">60 MT</span>
+                            </div>
+                            <p class="item-description">Coca-Cola, Fanta, Sprite, Água Tónica</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Cerveja Nacional</span>
+                                <span class="item-price">80 MT</span>
+                            </div>
+                            <p class="item-description">2M, Laurentina, Manica</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Água Mineral</span>
+                                <span class="item-price">40 MT</span>
+                            </div>
+                            <p class="item-description">Água mineral natural ou com gás</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPECIALTIES SECTION -->
+    <section class="specialties section" id="specialties">
+        <div class="container">
+            <div class="text-center fade-in">
+                <h2 class="section-title">Especialidades do Chef</h2>
+                <p>Pratos exclusivos que capturam a essência da nossa cozinha</p>
+            </div>
+
+            <div class="specialty-featured fade-in">
+                <div class="specialty-image">
+                    <img src="assets/dish-specialty.png" alt="Prato Especialidade">
+                </div>
+                <div class="specialty-text">
+                    <span class="specialty-tag">Recomendação do Chef</span>
+                    <h3>Camarão Grelhado à Fusion</h3>
+                    <p><strong>Camarões Gigantes Fusion</strong>: Selecionados manualmente na costa de Moçambique,
+                        grelhados na perfeição com o nosso molho exclusivo de infusão de peri-peri, mel silvestre e
+                        ervas finas.</p>
+                    <p><strong>O Acompanhamento</strong>: Servidos sobre um risoto de coco artesanal, cremoso e
+                        perfumado, finalizado com raspas frescas de lima e micro-vegetais da nossa horta.</p>
+
+                    <div class="dish-features">
+                        <div class="feature-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>Ingredientes Orgânicos</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-fire-alt"></i>
+                            <span>Grelhado na Brasa</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Receita Exclusiva</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DAILY DISH SECTION -->
+    <section class="daily-dish section" id="daily-dish">
+        <div class="container">
+            <div class="daily-dish-card fade-in">
+                <div class="daily-dish-content">
+                    <span class="daily-tag">Prato do Dia</span>
+                    <h2>Matapa de Caranguejo</h2>
+                    <p><strong>Tradição & Alma</strong>: Uma homenagem à alma da nossa cozinha. Folhas de mandioca
+                        piladas pacientemente com amendoim moído na hora e leite de coco fresco extraído artesanalmente.
+                    </p>
+                    <p><strong>Sabor do Mar</strong>: Enriquecida generosamente com caranguejo fresco da costa,
+                        capturando a essência do Oceano Índico em cada colherada.</p>
+
+                    <div class="dish-features">
+                        <div class="feature-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Preparo Lento</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-utensils"></i>
+                            <span>Sabor Autêntico</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-award"></i>
+                            <span>Prato Icónico</span>
+                        </div>
+                    </div>
+                    <p class="daily-availability">* Disponível apenas no almoço</p>
+                </div>
+                <div class="daily-dish-image">
+                    <img src="assets/daily-dish.png" alt="Matapa de Caranguejo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials section" id="testimonials">
+        <div class="container">
+            <div class="text-center fade-in">
+                <h2 class="section-title">O que dizem os nossos clientes</h2>
+                <p>A satisfação de quem nos visita é a nossa maior recompensa</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Uma experiência gastronómica incrível. A Matapa é a melhor da cidade e o ambiente é extremamente
+                        acolhedor."</p>
+                    <div class="testimonial-author">- Maria Silva</div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Excelente para jantares de negócios ou em família. O atendimento é impecável e a comida é sempre
+                        fresca."</p>
+                    <div class="testimonial-author">- João Matola</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="gallery section" id="gallery">
+        <div class="container">
+            <div class="text-center fade-in">
+                <h2 class="section-title">Nossa Galeria</h2>
+                <p>Um olhar sobre o nosso mundo</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in">
+                    <img src="assets/ambience-1.png" alt="Ambiente do Restaurante 1">
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="assets/ambience-2.png" alt="Ambiente do Restaurante 2">
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="assets/gallery-dessert.png" alt="Sobremesa Gourmet">
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="assets/gallery-cocktail.png" alt="Cocktail de Assinatura">
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="assets/gallery-exterior.png" alt="Exterior do Restaurante">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION & CONTACT SECTION -->
+    <section class="location section" id="location">
+        <div class="container">
+            <div class="text-center fade-in">
+                <h2 class="section-title">Localização & Contactos</h2>
+                <p>Visite-nos e descubra o melhor da gastronomia moçambicana</p>
+            </div>
+
+            <div class="location-content">
+                <div class="contact-info fade-in">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <div class="contact-label">Endereço</div>
+                            <div class="contact-value">Av. 24 de Julho, 554</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <div class="contact-label">Telefone</div>
+                            <div class="contact-value">+258 84 961 1719</div>
+                        </div>
+                    </div>
+
+                    <a href="tel:+258849611719" class="btn btn-secondary" style="margin-top: 1rem;">
+                        <i class="fas fa-phone-alt"></i> Ligar Agora
+                    </a>
+                </div>
+
+                <div class="map-container fade-in">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.0123456789!2d32.5891!3d-25.9692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDU4JzA5LjEiUyAzMsKwMzUnMjAuOCJF!5e0!3m2!1spt-PT!2smz!4v1234567890"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOURS SECTION -->
+    <section class="hours section" id="hours">
+        <div class="container">
+            <div class="text-center fade-in">
+                <h2 class="section-title">Horário de Funcionamento</h2>
+                <p>Estamos abertos para o servir</p>
+            </div>
+
+            <div class="hours-grid fade-in">
+                <div class="hours-row">
+                    <span class="hours-day">Segunda a Sexta</span>
+                    <span class="hours-time">11:00 - 22:00</span>
+                </div>
+                <div class="hours-row">
+                    <span class="hours-day">Sábado</span>
+                    <span class="hours-time">11:00 - 23:00</span>
+                </div>
+                <div class="hours-row">
+                    <span class="hours-day">Domingo</span>
+                    <span class="hours-time">11:00 - 21:00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA SECTION -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Venha viver uma experiência única connosco</h2>
+            <p>Reserve a sua mesa e prepare-se para uma viagem gastronómica inesquecível</p>
+            <a href="tel:+258849611719" class="btn btn-outline">Reservar Mesa</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo-placeholder light">Gourmet<span>Restaurant</span></div>
+                    <p>Sabores que encantam, momentos que ficam.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contactos</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Sua Localização Aqui</p>
+                    <p><i class="fas fa-phone"></i> +258 00 000 0000</p>
+                    <p><i class="fas fa-envelope"></i> info@seurestaurante.com</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Siga-nos</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/258849611719" class="social-link" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Gourmet Demo. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
