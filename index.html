@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Restaurant Demo - Restaurante de alta qualidade. Sabores que encantam, momentos que ficam.">
-    <meta name="keywords" content="restaurante, gastronomia, gourmet, demo">
-    <title>Gourmet Experience - Sabores que encantam, momentos que ficam</title>
+        content="Gourmet Restaurant - O melhor restaurante em Maputo. Sabores autênticos da gastronomia moçambicana com um toque de sofisticação e elegância.">
+    <meta name="keywords"
+        content="melhor restaurante em Maputo, gastronomia moçambicana, comida moçambicana, restaurante gourmet Maputo, jantar elegante Maputo">
+    <title>Gourmet Restaurant | Sabores Universais & Elegância</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +39,7 @@
                 <a href="#daily-dish" class="nav-link">Prato do Dia</a>
                 <a href="#menu" class="nav-link">Menu</a>
                 <a href="#location" class="nav-link">Localização</a>
-                <a href="tel:+258849611719" class="btn btn-primary-small">Reservar Mesa</a>
+                <a href="javascript:void(0)" class="btn btn-primary-small open-reservation">Reservar Mesa</a>
             </nav>
             <button class="mobile-menu-toggle" aria-label="Menu">
                 <i class="fas fa-bars"></i>
@@ -46,20 +47,30 @@
         </div>
     </header>
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/258849611719" class="whatsapp-float" target="_blank" aria-label="Fale connosco no WhatsApp">
-        <i class="fab fa-whatsapp"></i>
+    <!-- Floating Button (Chatbot Trigger) -->
+    <a href="javascript:void(0)" class="whatsapp-float chat-trigger" aria-label="Fale conosco">
+        <i class="fas fa-comments"></i>
     </a>
 
     <!-- HERO SECTION -->
     <section class="hero" id="home">
-        <img src="assets/hero-sabrina.png" alt="Restaurant Interior" class="hero-background">
+        <div class="hero-slideshow">
+            <div class="hero-slide active"
+                style="background-image: url('C:/Users/Sebastião Chemane/.gemini/antigravity/brain/93aeb1e6-1873-4671-aa5e-9cab09331fef/hero_bg_slideshow_1_1768414714023.png')">
+            </div>
+            <div class="hero-slide"
+                style="background-image: url('C:/Users/Sebastião Chemane/.gemini/antigravity/brain/93aeb1e6-1873-4671-aa5e-9cab09331fef/hero_bg_slideshow_2_1768414732440.png')">
+            </div>
+            <div class="hero-slide"
+                style="background-image: url('C:/Users/Sebastião Chemane/.gemini/antigravity/brain/93aeb1e6-1873-4671-aa5e-9cab09331fef/hero_bg_slideshow_3_1768414750070.png')">
+            </div>
+        </div>
         <div class="hero-content">
             <h1>Sabores que encantam, momentos que ficam</h1>
             <p class="hero-subtitle">Uma experiência gastronómica única de alta qualidade</p>
             <div class="hero-cta">
                 <a href="#menu" class="btn btn-primary">Ver Menu</a>
-                <a href="tel:+258849611719" class="btn btn-outline">Reservar Mesa</a>
+                <a href="javascript:void(0)" class="btn btn-outline open-reservation">Reservar Mesa</a>
             </div>
         </div>
     </section>
@@ -94,9 +105,17 @@
                 <p>Descubra os sabores que fazem da nossa cozinha um lugar especial</p>
             </div>
 
+            <div class="menu-filter fade-in">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="main">Principais</button>
+                <button class="filter-btn" data-filter="starter">Entradas</button>
+                <button class="filter-btn" data-filter="dessert">Sobremesas</button>
+                <button class="filter-btn" data-filter="drink">Bebidas</button>
+            </div>
+
             <div class="menu-categories">
                 <!-- Pratos Principais -->
-                <div class="menu-category fade-in">
+                <div class="menu-category fade-in" data-category="main">
                     <h3 class="category-title">Pratos Principais</h3>
                     <div class="menu-items">
                         <div class="menu-item">
@@ -155,7 +174,7 @@
                 </div>
 
                 <!-- Entradas -->
-                <div class="menu-category fade-in">
+                <div class="menu-category fade-in" data-category="starter">
                     <h3 class="category-title">Entradas</h3>
                     <div class="menu-items">
                         <div class="menu-item">
@@ -195,7 +214,7 @@
                 </div>
 
                 <!-- Sobremesas -->
-                <div class="menu-category fade-in">
+                <div class="menu-category fade-in" data-category="dessert">
                     <h3 class="category-title">Sobremesas</h3>
                     <div class="menu-items">
                         <div class="menu-item">
@@ -233,7 +252,7 @@
                 </div>
 
                 <!-- Bebidas -->
-                <div class="menu-category fade-in">
+                <div class="menu-category fade-in" data-category="drink">
                     <h3 class="category-title">Bebidas</h3>
                     <div class="menu-items">
                         <div class="menu-item">
@@ -408,48 +427,17 @@
         </div>
     </section>
 
-    <!-- LOCATION & CONTACT SECTION -->
-    <section class="location section" id="location">
-        <div class="container">
-            <div class="text-center fade-in">
-                <h2 class="section-title">Localização & Contactos</h2>
-                <p>Visite-nos e descubra o melhor da gastronomia moçambicana</p>
-            </div>
-
-            <div class="location-content">
-                <div class="contact-info fade-in">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <div class="contact-label">Endereço</div>
-                            <div class="contact-value">Av. 24 de Julho, 554</div>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-text">
-                            <div class="contact-label">Telefone</div>
-                            <div class="contact-value">+258 84 961 1719</div>
-                        </div>
-                    </div>
-
-                    <a href="tel:+258849611719" class="btn btn-secondary" style="margin-top: 1rem;">
-                        <i class="fas fa-phone-alt"></i> Ligar Agora
-                    </a>
-                </div>
-
-                <div class="map-container fade-in">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.0123456789!2d32.5891!3d-25.9692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDU4JzA5LjEiUyAzMsKwMzUnMjAuOCJF!5e0!3m2!1spt-PT!2smz!4v1234567890"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
+    <!-- LOCATION & MAP (FULL-WIDTH) -->
+    <section class="location-map" id="location">
+        <div class="container text-center mb-4">
+            <h2 class="section-title">Visite-nos no Coração de Maputo</h2>
+            <p>Uma localização privilegiada na Av. 24 de Julho para a sua comodidade</p>
+        </div>
+        <div class="full-width-map fade-in">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.24074211604!2d-1.25772635!3d51.7520209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDQ1JDA3LjMiTiAxwrAxNSc0Ny44Ilc!5e0!3m2!1sen!2suk!4v1705255000000!5m2!1sen!2suk"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
     </section>
 
@@ -483,7 +471,7 @@
         <div class="container">
             <h2>Venha viver uma experiência única connosco</h2>
             <p>Reserve a sua mesa e prepare-se para uma viagem gastronómica inesquecível</p>
-            <a href="tel:+258849611719" class="btn btn-outline">Reservar Mesa</a>
+            <a href="#location" class="btn btn-outline">Reservar Mesa</a>
         </div>
     </section>
 
@@ -491,39 +479,150 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
+                <!-- Coluna 1: Sobre -->
                 <div class="footer-section">
                     <div class="logo-placeholder light">Gourmet<span>Restaurant</span></div>
-                    <p>Sabores que encantam, momentos que ficam.</p>
-                </div>
-
-                <div class="footer-section">
-                    <h3>Contactos</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Sua Localização Aqui</p>
-                    <p><i class="fas fa-phone"></i> +258 00 000 0000</p>
-                    <p><i class="fas fa-envelope"></i> info@seurestaurante.com</p>
-                </div>
-
-                <div class="footer-section">
-                    <h3>Siga-nos</h3>
+                    <p>Referência em alta gastronomia moçambicana, unindo tradição e sofisticação no coração de Maputo.
+                    </p>
                     <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
                         <a href="#" class="social-link" aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://wa.me/258849611719" class="social-link" aria-label="WhatsApp">
-                            <i class="fab fa-whatsapp"></i>
+                        <a href="#" class="social-link" aria-label="TripAdvisor">
+                            <i class="fab fa-tripadvisor"></i>
                         </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coluna 2: Links Rápidos -->
+                <div class="footer-section">
+                    <h3>Navegação</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#location">Localização</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Contactos -->
+                <div class="footer-section">
+                    <h3>Contactos</h3>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+258 00 000 0000</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>contato@restaurante.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Sua Localização Aqui, Cidade</span>
                     </div>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 Gourmet Demo. Todos os direitos reservados.</p>
+                <p>&copy; 2026 Gourmet Demo. Desenvolvido por [Teu Nome/Agência] - Estratégia & Performance Web.</p>
             </div>
         </div>
     </footer>
+    </footer>
+
+    <!-- LIGHTBOX OVERLAY -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <!-- RESERVATION MODAL -->
+    <div class="modal-overlay" id="reservation-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+
+            <div id="reservation-form-view">
+                <h2 class="section-title">Reserva de Mesa</h2>
+                <p class="section-subtitle">Preencha os seus dados para conferir a disponibilidade.</p>
+                <form class="reservation-form" id="reservation-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="res-name">Nome Completo</label>
+                            <input type="text" id="res-name" placeholder="Ex: João Silva" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="res-email">E-mail</label>
+                            <input type="email" id="res-email" placeholder="email@exemplo.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="res-phone">Telefone / WhatsApp</label>
+                            <input type="tel" id="res-phone" placeholder="+258..." required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="res-date">Data</label>
+                            <input type="date" id="res-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="res-guests">Nº de Pessoas</label>
+                            <select id="res-guests" required>
+                                <option value="1">1 Pessoa</option>
+                                <option value="2" selected>2 Pessoas</option>
+                                <option value="3">3 Pessoas</option>
+                                <option value="4">4 Pessoas</option>
+                                <option value="5">Mais de 5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Conferir disponibilidade</button>
+                </form>
+            </div>
+
+            <div id="reservation-success-view" style="display: none;">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2 class="section-title">Solicitação Enviada!</h2>
+                <div class="success-message">
+                    <p>Você será notificado por <strong>SMS e e-mail</strong> sobre a disponibilidade da mesa e os
+                        termos e condições para confirmar a reserva efetivamente.</p>
+                </div>
+                <button class="btn btn-primary w-100" id="close-success">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CHATBOT WINDOW -->
+    <div class="chatbot-window" id="chatbot-window">
+        <div class="chat-header">
+            <h3>Assistente Gourmet</h3>
+            <button class="chat-close" id="chat-close">&times;</button>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <div class="chat-message bot">
+                <i class="fas fa-robot"></i>
+                Olá! 👋 Sou a assistente virtual do Gourmet Restaurant. Como posso ajudar com o seu pedido, reserva ou
+                dúvidas sobre o nosso espaço?
+            </div>
+            <div id="typing-indicator" class="chat-message bot typing" style="display: none;">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="chat-input" placeholder="Escreva aqui...">
+            <button id="chat-send"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
 
     <!-- JavaScript -->
     <script src="script.js"></script>
